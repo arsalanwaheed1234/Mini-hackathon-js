@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+
+ /* header start */
+ 
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.logo{
+width: 20%;
+text-align: center;
+}
+.menu{
+    width: 60%;
+    text-align: right;
+
+}
+
+.menu ul li {
+    display: inline-block;
+    padding: 10px;
+}
+.menu ul li a {
+    text-decoration: none; 
+    color: black;
+    font-size: 15px;
+}
+
+.button{
+    width: 20%;
+    text-align: center;
+}
+.click-button{
+    border: none;
+    background-color: #0f3460;
+    border-radius: 25px;
+    padding: 8px 26px;
+    text-decoration: none;
+    color: #fff;
+}
+.ham{
+    background-image: url(./assests/images/menu.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 25px;
+    display: none;
+}
+ /* header close  */
+
+ /* contant start */
+
+ .detail{
+    display: flex;
+    margin-top: 2em;
+
+ }
+ .contant{
+    width: 60%;
+    height: 500px;
+    padding: 6em 3em;
+ }
+ .contant h1{
+    font-size: 40px;
+ }
+ .image{
+    width: 40%;
+    background-image: url("https://img.freepik.com/free-vector/children-back-school-flat-design_23-2148596551.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1723334400&semt=ais_hybrid");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 30px;
+    background-size: 110%;
+
+ }
+ .text p{
+    font-size: 17px;
+    margin: 40px 0px;
+
+    color: #696C73;
+}
+.download{
+    border: none;
+    background-color: #0f3460;
+    border-radius: 25px;
+    padding: 12px 40px;
+    color: #fff;
+    text-decoration: none;
+}
+  /* contant close  */
+
+  
+  @media screen and (max-width: 1026px){
+
+    .contant{ 
+        padding: 6em 3em;
+     }
+    .contant h1{
+       font-size: 30px;
+     } 
+     .text p{
+        margin: 20px 0px;
+        font-size: 14px;
+     }
+     .image{margin-top: 20px;
+        background-size: 90%;
+     }
+     .download{
+        border-radius: 15px;
+        padding: 11px 35px;
+        font-size: 12px;
+     } .click-button{
+        border-radius: 25px;
+        padding: 8px 23px;
+        font-size: 12px;
+     }
+ }
+ @media screen and (max-width: 786px){
+    .contant{ 
+        padding: 6em 3em;
+     }
+    .contant h1{
+       font-size: 25px;
+     } 
+     .logo img{
+        width: 95px;
+    }
+     .text p{  
+        font-size: 10px;
+        margin: 20px 0px;
+     }
+     .image{margin-top: 20px;
+        background-size: 80%;
+     }
+     .download{
+        border-radius: 15px;
+        padding: 10px 30px;
+        font-size: 10px;
+     }
+     .click-button{
+        border-radius: 25px;
+        padding: 7px 20px;
+        font-size: 10px;
+     }
+ }
+
+ @media screen and (max-width: 600px){
+    .logo{
+
+        margin-left: 10px;
+    }
+    .logo img{
+        width: 90px;
+    }
+    .menu ul li a {
+        display: none;
+    }
+    .click-button{
+        display: none;
+    }
+    .ham{
+        display: block;
+        margin-right: 3em;
+    }
+    .detail{align-items: center;
+        display: flex;
+        flex-direction: column-reverse;
+    }.image{
+        height: 300px;
+        width: 300px;
+    }
+    .contant{
+        padding: 3em 10px;
+        height: 100px;
+    }
+   .contant h1{
+        font-size: 15px;
+     }
+     .text p{
+        font-size: 12px;
+        margin: 20px 0px;
+     }
+    .download{
+        border-radius: 15px;
+        padding: 8px 20px;
+        font-size: 8px;
+     }
+     .text button{
+       align-self: center;
+     }
+     .ham:hover .menu ul li a{
+        display: block;
+     }
+    
+ }
+ 
